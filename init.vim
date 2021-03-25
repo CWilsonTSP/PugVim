@@ -18,6 +18,7 @@ source ~/.config/nvim/plugins/onedark.vim
 
 " load sets
 source ~/.config/nvim/sets.vim
+source ~/.config/nvim/maps.vim
 
 
 " filetype plugin indent on    " automatically run by Plug 
