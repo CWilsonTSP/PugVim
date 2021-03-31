@@ -4,6 +4,7 @@ filetype off                  " required
 source ~/.config/nvim/plugins/plug.vim
 
 " source all of the plugin config files
+source ~/.config/nvim/plugins/startify.vim
 source ~/.config/nvim/plugins/coc.vim
 source ~/.config/nvim/plugins/emmet.vim
 source ~/.config/nvim/plugins/nerdtree.vim
@@ -14,6 +15,7 @@ source ~/.config/nvim/plugins/fugative.vim
 source ~/.config/nvim/plugins/blamer.vim
 source ~/.config/nvim/plugins/lightline.vim
 source ~/.config/nvim/plugins/onedark.vim
+source ~/.config/nvim/plugins/vimtex.vim
 " source ~/.config/nvim/plugins/treesitter.vim
 
 " load sets

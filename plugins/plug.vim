@@ -50,6 +50,10 @@ Plug 'mattn/emmet-vim' "A bit annoying because it takes over my Tab key
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'} "Nerdtree
 Plug 'neoclide/coc.nvim', {'branch': 'release'} "autocompletion
 
+Plug 'mhinz/vim-startify'
+" Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+Plug 'lervag/vimtex'
+
 " sheep game lol
 Plug 'vim/killersheep'
 
