@@ -17,11 +17,19 @@ set ttimeoutlen=0          " https://stackoverflow.com/questions/37644682/why-is
 set ttyfast                " Rendering
 set tw=500
 
+" set the fold method depending on the filetype
+" set the default to be syntax
 set foldmethod=syntax
+" change foldmethod to be marker if in latex
+autocmd FileType tex set foldmethod=marker
+" How deep auto folds can go
 set foldnestmax=1
 
 " set clipboard to easily copy from vim and paste into OSx
 set clipboard=unnamed
+
+" add a color column
+set colorcolumn=80
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
