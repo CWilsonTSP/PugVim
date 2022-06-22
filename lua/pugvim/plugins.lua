@@ -38,6 +38,7 @@ packer.init {
   },
 }
 
+
 --
 -- PLUGIN LIST
 --
@@ -48,6 +49,8 @@ return packer.startup(function(use)
     -- use "ahmedkhalf/project.nvim"
     use 'lewis6991/impatient.nvim'
     use 'goolord/alpha-nvim'
+    use "caenrique/nvim-maximize-window-toggle"
+    use 'karb94/neoscroll.nvim' -- smooth scrolling
 
     -- colorschemes
     use "shaunsingh/nord.nvim"
@@ -86,8 +89,13 @@ return packer.startup(function(use)
         "nvim-treesitter/nvim-treesitter",
         run = ":TSUpdate"
     }
+    use { -- spellsitter, vim spelling stuff plus treesitter
+      'lewis6991/spellsitter.nvim',
+      config = function()
+        require('spellsitter').setup()
+      end
+    }
     use "p00f/nvim-ts-rainbow" -- rainbow colored braces
-    use "dpelle/vim-LanguageTool" -- grammar and spell checker
 
 
     use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
@@ -104,15 +112,48 @@ return packer.startup(function(use)
     use "folke/which-key.nvim"
     use "lewis6991/gitsigns.nvim"
 
-    use 'ap/vim-css-color' -- highlight hex color codes
+    use "norcalli/nvim-colorizer.lua" -- highlight hex color codes
     use 'tpope/vim-fugitive'  -- git integration commands
     use 'APZelos/blamer.nvim' -- per-line git blame
     -- use 'airblade/vim-gitgutter' -- sign column for git status
     use 'tpope/vim-surround'  -- 'S' to surround something
     use 'jeffkreeftmeijer/vim-numbertoggle' -- switch number formats in insert mode
+    use 'tpope/vim-abolish' -- :Abolish {despa,sepe}rat{e,es,ed,ing,ely,ion,ions,or}  {despe,sepa}rat{}
     -- use 'rubixninja314/vim-mcfunction' -- mcfunction syntax
     -- use "Vftdan/vim-mcfunction"
-    use "CWilsonTSP/vim-mcfunction"
+    use "mbpowers/nvimager" -- images in markup files
+    use {
+        "SmiteshP/nvim-gps",
+        requires = "nvim-treesitter/nvim-treesitter"
+    }
+    use 'nacro90/numb.nvim' -- peeking lines with :NNN
+    use 'sunjon/shade.nvim' -- darken unfocused windows
+
+
+    -- writing
+    use {
+        "mattly/vim-markdown-enhancements",
+        "preservim/vim-markdown",
+        "preservim/vim-pencil",
+        "preservim/vim-litecorrect", -- teh to the
+        "preservim/vim-textobj-sentence", -- extends vim sentence object for use in prose
+        "vigoux/ltex-ls.nvim", -- configuration for ltex-ls
+        requires = {
+            "kana/vim-textobj-user",
+        },
+        "junegunn/limelight.vim", -- hyper-focus writing in vim
+        "junegunn/goyo.vim", -- Distraction-free writing in vim
+        ft = {'md', 'tex'}
+    }
+
+    -- Killer sheep game!
+    use "seandewar/killersheep.nvim"
+
+    -- minecraft
+    use {
+        "CWilsonTSP/vim-mcfunction",
+        ft = {'mcfunction'}
+    }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

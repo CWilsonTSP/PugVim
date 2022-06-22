@@ -79,20 +79,20 @@ local opts = {
 }
 
 local mappings = {
-  ["a"] = { "<cmd>Alpha<cr>", "Alpha" },
   ["b"] = {
     "<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
     "Buffers",
   },
   ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
-  -- ["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
+  -- ["q"] = { "<cmd>Bdelete<CR>", "Close Buffer" },
+  -- ["c"] = { "<cmd>Bdelete!<CR>", "Force Close Buffer" },
   -- ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
-  ["f"] = {
-    "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes'))<cr>",
-    "Find files",
-  },
-  ["F"] = { "<cmd>Telescope live_grep<cr>", "Find Text" },
-  ["t"] = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
+  -- ["f"] = {
+  --   "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes'))<cr>",
+  --   "Find files",
+  -- },
+  -- ["F"] = { "<cmd>Telescope live_grep<cr>", "Find Text" },
+  ["t"] = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Terminal" },
   -- ["P"] = { "<cmd>Telescope projects<cr>", "Projects" },
 
   p = {
@@ -127,10 +127,22 @@ local mappings = {
     },
   },
 
+    w = {
+        name = "Writing",
+        g = {"<cmd>Goyo<cr>", "Goyo"},
+        p = {"<cmd>PencilToggle<cr>", "Toggle Pencil"},
+        s = {
+            "<cmd>lua require('telescope.builtin').spell_suggest(require('telescope.themes'))<cr>",
+            "Spell Suggest",
+        },
+        l = {"<cmd>Limelight 0.8<cr>", "Limelight on"},
+        L = {"<cmd>Limelight<cr>", "Limelight off"},
+    },
+
   l = {
     name = "LSP",
     a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
-    d = { "<cmd>lua vim.lsp.diagnostic.show_line_diagnostics({ border = 'rounded' })<CR>", "Diagnostic" },
+    d = { "<cmd>lua vim.diagnostic.open_float({ border = 'rounded', scope = 'cursor'})<CR>", "Diagnostic" },
     D = {
       "<cmd>Telescope diagnostics bufrn=0<cr>",
       "Document Diagnostics",
@@ -151,7 +163,7 @@ local mappings = {
       "Prev Diagnostic",
     },
     l = { "<cmd>lua vim.lsp.codelens.run()<cr>", "CodeLens Action" },
-    q = { "<cmd>lua vim.lsp.diagnostic.set_loclist()<cr>", "Quickfix" },
+    -- q = { "<cmd>lua vim.lsp.diagnostic.set_loclist()<cr>", "Quickfix" },
     r = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename" },
     s = { "<cmd>Telescope lsp_document_symbols<cr>", "Document Symbols" },
     S = {
@@ -171,6 +183,28 @@ local mappings = {
   --   C = { "<cmd>Telescope commands<cr>", "Commands" },
   -- },
 
+    f = {
+        name = "Find",
+        b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
+        f = {
+          "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes'))<cr>",
+          "Find files",
+        },
+        t = { "<cmd>Telescope live_grep<cr>", "Find Text" },
+        i = { "<cmd>lua require('telescope').extensions.media_files.media_files()<cr>", "Media" },
+        l = { "<cmd>Telescope resume<cr>", "Last Search" },
+        r = { "<cmd>Telescope oldfiles<cr>", "Recent File" },
+        R = { "<cmd>Telescope registers<cr>", "Registers" },
+      },
+    o = {
+        name = "Options/Help",
+        a = { "<cmd>Alpha<cr>", "Alpha" },
+        h = { "<cmd>Telescope help_tags<cr>", "Help" },
+        k = { "<cmd>Telescope keymaps<cr>", "Keymaps" },
+        C = { "<cmd>Telescope commands<cr>", "Commands" },
+        c = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
+        M = { "<cmd>Telescope man_pages<cr>", "Man Pages" },
+    },
   T = {
     name = "Terminal",
     -- n = { "<cmd>lua _NODE_TOGGLE()<cr>", "Node" },
@@ -180,10 +214,6 @@ local mappings = {
     f = { "<cmd>ToggleTerm direction=float<cr>", "Float" },
     h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
     v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
-  },
-  ["s"] = {
-    "<cmd>lua require('telescope.builtin').spell_suggest(require('telescope.themes'))<cr>",
-    "Spell Suggest",
   },
   ["h"] = {
       "<cmd>noh<cr>",

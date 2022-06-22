@@ -1,23 +1,37 @@
-require "pugvim.options"
-require "pugvim.maps"
-require "pugvim.plugins"
-require "pugvim.colorscheme"
-require "pugvim.cmp"
-require "pugvim.lsp"
-require "pugvim.telescope"
-require "pugvim.treesitter"
-require "pugvim.languagetool"
-require "pugvim.autopairs"
-require "pugvim.comment"
-require "pugvim.gitsigns"
-require "pugvim.nvim-tree"
-require "pugvim.lualine"
-require "pugvim.project"
-require "pugvim.toggleterm"
-require "pugvim.impatient"
-require "pugvim.whichkey"
-require "pugvim.alpha"
+require "pugvim.options"                -- set vim options
+require "pugvim.maps"                   -- set mappings
+require "pugvim.plugins"                -- load plugins
+require "pugvim.colorscheme"            -- set colorscheme
+require "pugvim.cmp"                    -- completion
+require "pugvim.lsp"                    -- language server protocol
+require "pugvim.telescope"              -- fuzzy finder
+require "pugvim.treesitter"             -- syntax "highlighting" and more
+require "pugvim.autopairs"              -- complete pairs
+require "pugvim.comment"                -- easy commenting
+require "pugvim.gitsigns"               -- git signs left of line
+require "pugvim.nvim-tree"              -- file tree
+require "pugvim.lualine"                -- status line at bottom
+require "pugvim.project"                -- XXX
+require "pugvim.colorizor"              -- colorize color codes
+require "pugvim.toggleterm"             -- easy toggle vim terminals
+require "pugvim.impatient"              -- improve startup time
+require "pugvim.whichkey"               -- helpful keybinds
+require "pugvim.alpha"                  -- start page
+require "pugvim.autocommands"           -- auto commands
+require "pugvim.numb"                   -- peek the line with :NN
+require "pugvim.gps"                    -- TreeSitter thing at top
+require "pugvim.winbar"                 -- bar thing at the top
+require "pugvim.neoscroll"              -- Smooth scrolling
+-- require "pugvim.ltex"
+-- require "pugvim.shade"                  -- slightly darken unfocused windows
 
+-- Writing Plugins --
+require "pugvim.limelight"              -- toggle light and dark modes
+require "pugvim.goyo"                   -- toggle a simple writing window
+require "pugvim.pencil"                 -- pencil wrap modes
+
+-- Games? --
+require "pugvim.killersheep"
 
 -- Datapacks
 local lspconfig = require'lspconfig'
