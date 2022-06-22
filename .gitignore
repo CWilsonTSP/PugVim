@@ -1,4 +1,5 @@
 init.vim.backup
 autoload/*
 plugged/*
+spell/*
 .netrwhist
