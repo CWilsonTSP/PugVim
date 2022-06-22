@@ -1,16 +1,21 @@
 # Pug vim
 ## What is Pug Vim?
 Pug Vim is my personal configuration for Neovim, which I have decided to post 
-on GitHub as both a staging point for me to move between machines and to share 
-with anyone that wants it. Organization and format is mostly based on the 
-[Neovim From Scratch](https://github.com/LunarVim/Neovim-from-scratch) series by [Christian Chiarulli](https://github.com/ChristianChiarulli).
+on GitHub as both a staging point for me to move between machines and to share
+with anyone that wants it (though I highly encourage you to write your own!).
+Organization and format is mostly based on the [Neovim From
+Scratch](https://github.com/LunarVim/Neovim-from-scratch) series by [Christian
+Chiarulli](https://github.com/ChristianChiarulli).
+
+Though it was initially setup as a development platform, I mostly only use
+it now for writing; though, the development configuration still exists.
 
 The name comes from the *nom de guerre* that I use for most things related to 
 gaming/non-professional online identities, TheSaltyPug (Also, pugs as a dog 
 breed are pretty neat).
 
 ## Whats included?
-Pug Vim is a A semi-comprehensive vim configuration, designed to mimic
+Pug Vim is a semi-comprehensive vim configuration, designed to mimic
 IDEs such as VScode. Pug Vim currently has:
 - Intelligent autocomplete
 - Some themes
@@ -18,6 +23,7 @@ IDEs such as VScode. Pug Vim currently has:
 - Git integration
 - Intelligent fuzzy-finding
 - A file explorer
+- Prose writing support
 
 ## Plugin List
 TODO- list out the plugins
