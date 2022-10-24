@@ -8,7 +8,7 @@ Scratch](https://github.com/LunarVim/Neovim-from-scratch) series by [Christian
 Chiarulli](https://github.com/ChristianChiarulli).
 
 Though it was initially setup as a development platform, I mostly only use
-it now for writing; though, the development configuration still exists.
+it now for writing; the development configuration still exists, though.
 
 The name comes from the *nom de guerre* that I use for most things related to 
 gaming/non-professional online identities, TheSaltyPug (Also, pugs as a dog 
