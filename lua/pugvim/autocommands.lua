@@ -20,3 +20,11 @@ vim.cmd[[
         autocmd FileType textile call textobj#sentence#init()
     augroup END
 ]]
+
+vim.cmd[[
+    augroup textwidth_settings
+        autocmd!
+        autocmd FileType markdown,mkd setlocal textwidth=80
+        autocmd FileType textile call setlocal textwidth=80
+    augroup END
+]]

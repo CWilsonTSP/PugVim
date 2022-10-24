@@ -129,14 +129,13 @@ local mappings = {
 
     w = {
         name = "Writing",
-        g = {"<cmd>Goyo<cr>", "Goyo"},
+        z = {"<cmd>TZAtaraxis<cr>", "Zen Mode"},
         p = {"<cmd>PencilToggle<cr>", "Toggle Pencil"},
         s = {
             "<cmd>lua require('telescope.builtin').spell_suggest(require('telescope.themes'))<cr>",
             "Spell Suggest",
         },
-        l = {"<cmd>Limelight 0.8<cr>", "Limelight on"},
-        L = {"<cmd>Limelight<cr>", "Limelight off"},
+        t = {"<cmd>Twilight<cr>", "Toggle Twilight off"},
     },
 
   l = {
@@ -215,7 +214,7 @@ local mappings = {
     h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
     v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
   },
-  ["h"] = {
+    ["h"] = {
       "<cmd>noh<cr>",
       "Disable Highlighting",
     }

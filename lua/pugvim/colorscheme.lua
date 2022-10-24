@@ -17,7 +17,7 @@ vim.g.onedark_termcolors = "256"
 -- endif
 -- ]]
 
-local colorscheme = "onedark"
+local colorscheme = "tokyonight-night"
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not status_ok then

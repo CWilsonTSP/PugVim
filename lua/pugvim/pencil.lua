@@ -1,3 +1,4 @@
 vim.cmd[[
-    let g:pencil#wrapModeDefault = 'soft'
+    let g:pencil#wrapModeDefault = 'hard'
+    let g:pencil#autoformat = 1
 ]]

@@ -4,6 +4,7 @@ if not status_ok then
 end
 
 require("pugvim.lsp.lsp_installer")
+-- require("pugvim.lsp.configs")
 require("pugvim.lsp.handlers").setup()
 
 require("pugvim.lsp.servers.spyglass")

@@ -58,10 +58,12 @@ return packer.startup(function(use)
     use "morhetz/gruvbox"
     use "joshdick/onedark.vim"
     use "LunarVim/Colorschemes"
+    use "olimorris/onedarkpro.nvim"
     use {
         "sonph/onehalf",
         rtp = "vim/"
     }
+    use "folke/tokyonight.nvim"
 
     -- completion
     use "hrsh7th/nvim-cmp" -- completion
@@ -79,6 +81,7 @@ return packer.startup(function(use)
     -- LSP
     use "neovim/nvim-lspconfig"
     use "williamboman/nvim-lsp-installer"
+    use "j-hui/fidget.nvim" -- eye candy for lsp server status
 
     -- Telescope
     use "nvim-telescope/telescope.nvim"
@@ -113,6 +116,7 @@ return packer.startup(function(use)
     use "lewis6991/gitsigns.nvim"
 
     use "norcalli/nvim-colorizer.lua" -- highlight hex color codes
+    use "nvim-colortils/colortils.nvim" --test
     use 'tpope/vim-fugitive'  -- git integration commands
     use 'APZelos/blamer.nvim' -- per-line git blame
     -- use 'airblade/vim-gitgutter' -- sign column for git status
@@ -134,15 +138,20 @@ return packer.startup(function(use)
     use {
         "mattly/vim-markdown-enhancements",
         "preservim/vim-markdown",
+        "davidgranstrom/nvim-markdown-preview",
         "preservim/vim-pencil",
         "preservim/vim-litecorrect", -- teh to the
         "preservim/vim-textobj-sentence", -- extends vim sentence object for use in prose
+        "kana/vim-textobj-user", -- extends vim sentence object for use in prose
         "vigoux/ltex-ls.nvim", -- configuration for ltex-ls
         requires = {
             "kana/vim-textobj-user",
         },
-        "junegunn/limelight.vim", -- hyper-focus writing in vim
-        "junegunn/goyo.vim", -- Distraction-free writing in vim
+        -- "junegunn/limelight.vim", -- hyper-focus writing in vim
+        -- "junegunn/goyo.vim", -- Distraction-free writing in vim
+        "Pocco81/true-zen.nvim", -- Replaces goyo
+        "folke/twilight.nvim", -- replaces limelight
+
         ft = {'md', 'tex'}
     }
 
