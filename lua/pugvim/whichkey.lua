@@ -204,6 +204,14 @@ local mappings = {
         c = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
         M = { "<cmd>Telescope man_pages<cr>", "Man Pages" },
     },
+    q = {
+        name = "Fun Fun Fun",
+        d = { "<cmd>lua require('duck').hatch()<cr>", "Hatch a duck" },
+        c = { "<cmd>lua require('duck').cook()<cr>", "Cook the ducks" },
+        s = { "<cmd>KillKillKill<cr>", "Killer Sheep" },
+        r = { "<cmd>CellularAutomaton make_it_rain<cr>", "Make it rain!" },
+        g = { "<cmd>CellularAutomaton game_of_life<cr>", "Game of Life" },
+    },
   T = {
     name = "Terminal",
     -- n = { "<cmd>lua _NODE_TOGGLE()<cr>", "Node" },

@@ -32,8 +32,8 @@ require "pugvim.twilight"              -- toggle light and dark modes
 require "pugvim.truezen"                   -- toggle a simple writing window
 require "pugvim.pencil"                 -- pencil wrap modes
 
--- Games? --
-require "pugvim.killersheep"
+-- fun
+require "pugvim.fun"
 
 -- Datapacks
 local lspconfig = require'lspconfig'

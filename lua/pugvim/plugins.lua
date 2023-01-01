@@ -155,8 +155,12 @@ return packer.startup(function(use)
         ft = {'md', 'tex'}
     }
 
+    -- FUN
     -- Killer sheep game!
     use "seandewar/killersheep.nvim"
+    -- Falling sand and "Game of Life" animations
+    use 'eandrju/cellular-automaton.nvim'
+    use "tamton-aquib/duck.nvim"
 
     -- minecraft
     use {
