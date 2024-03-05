@@ -24,7 +24,7 @@ require "pugvim.numb"                   -- peek the line with :NN
 require "pugvim.gps"                    -- TreeSitter thing at top
 require "pugvim.winbar"                 -- bar thing at the top
 require "pugvim.neoscroll"              -- Smooth scrolling
-require "pugvim.shade"                  -- slightly darken unfocused windows
+--[[ require "pugvim.shade"                  -- slightly darken unfocused windows ]]
 
 -- Writing Plugins --
 require "pugvim.twilight"               -- toggle light and dark modes
