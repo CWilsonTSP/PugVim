@@ -46,26 +46,5 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 -- capabilities.textDocument.documentHighlight.dynamicRegistration = true
 -- capabilities.textDocument.document_color = true
 
-if not configs.spyglass then
-  configs.spyglass = {
-    default_config = {
-      cmd = { 'datapack-language-server', '--stdio' };
-      filetypes = { 'mcfunction' };
-      root_dir = function(fname)
-        return vim.loop.cwd()
-      end;
-      settings = {
-          datapack = {
-              features = {
-                  semanticColoring = "on"
-                    }
-                }
-            };
-    };
-  }
-end
-
-lspconfig.spyglass.setup{ capabilities = capabilities }
-
 local cmp_nvim_lsp = require("cmp_nvim_lsp")
 capabilities = cmp_nvim_lsp.default_capabilities(capabilities)
