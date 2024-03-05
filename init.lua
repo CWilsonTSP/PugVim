@@ -10,7 +10,7 @@ require "pugvim.treesitter"             -- syntax "highlighting" and more
 require "pugvim.autopairs"              -- complete pairs
 require "pugvim.comment"                -- easy commenting
 require "pugvim.gitsigns"               -- git signs left of line
-require "pugvim.nvim-tree"              -- file tree
+--[[ require "pugvim.nvim-tree"              -- file tree ]]
 require "pugvim.lualine"                -- status line at bottom
 require "pugvim.project"                -- XXX
 require "pugvim.colorizor"              -- colorize color codes
@@ -31,6 +31,7 @@ require "pugvim.ltex"
 require "pugvim.twilight"              -- toggle light and dark modes
 require "pugvim.truezen"                   -- toggle a simple writing window
 require "pugvim.pencil"                 -- pencil wrap modes
+require "pugvim.markdownpreview"                 -- pencil wrap modes
 
 -- fun
 require "pugvim.fun"

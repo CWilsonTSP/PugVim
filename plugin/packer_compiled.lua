@@ -189,10 +189,20 @@ _G.packer_plugins = {
     path = "/home/chad/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  ["markdown-preview.nvim"] = {
+    loaded = true,
+    path = "/home/chad/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
+    url = "https://github.com/iamcco/markdown-preview.nvim"
+  },
   ["neoscroll.nvim"] = {
     loaded = true,
     path = "/home/chad/.local/share/nvim/site/pack/packer/start/neoscroll.nvim",
     url = "https://github.com/karb94/neoscroll.nvim"
+  },
+  ["no-neck-pain.nvim"] = {
+    loaded = true,
+    path = "/home/chad/.local/share/nvim/site/pack/packer/start/no-neck-pain.nvim",
+    url = "https://github.com/shortcuts/no-neck-pain.nvim"
   },
   ["nord.nvim"] = {
     loaded = true,
@@ -234,20 +244,10 @@ _G.packer_plugins = {
     path = "/home/chad/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
-  ["nvim-markdown-preview"] = {
-    loaded = true,
-    path = "/home/chad/.local/share/nvim/site/pack/packer/start/nvim-markdown-preview",
-    url = "https://github.com/davidgranstrom/nvim-markdown-preview"
-  },
   ["nvim-maximize-window-toggle"] = {
     loaded = true,
     path = "/home/chad/.local/share/nvim/site/pack/packer/start/nvim-maximize-window-toggle",
     url = "https://github.com/caenrique/nvim-maximize-window-toggle"
-  },
-  ["nvim-tree.lua"] = {
-    loaded = true,
-    path = "/home/chad/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
-    url = "https://github.com/kyazdani42/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
@@ -364,6 +364,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/chad/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-latex-live-preview"] = {
+    loaded = true,
+    path = "/home/chad/.local/share/nvim/site/pack/packer/start/vim-latex-live-preview",
+    url = "https://github.com/xuhdev/vim-latex-live-preview"
   },
   ["vim-litecorrect"] = {
     loaded = true,

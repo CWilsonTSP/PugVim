@@ -16,10 +16,10 @@ lsp_installer.on_server_ready(function(server)
 --	 	opts = vim.tbl_deep_extend("force", jsonls_opts, opts)
 --	 end
 
-	 if server.name == "sumneko_lua" then
-	 	local sumneko_opts = require("pugvim.lsp.settings.sumneko_lua")
-	 	opts = vim.tbl_deep_extend("force", sumneko_opts, opts)
-	 end
+	 --[[ if server.name == "lua_ls" then ]]
+	 --[[ 	local lua_opts = require("pugvim.lsp.settings.lua") ]]
+	 --[[ 	opts = vim.tbl_deep_extend("force", lua_opts, opts) ]]
+	 --[[ end ]]
 
 	 if server.name == "pyright" then
 	 	local pyright_opts = require("pugvim.lsp.settings.pyright")

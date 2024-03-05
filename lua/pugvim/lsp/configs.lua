@@ -5,7 +5,7 @@ end
 
 local lspconfig = require("lspconfig")
 
-local servers = { "pyright", "sumneko_lua", "ltex-ls" }
+local servers = { "pyright", "ltex-ls" }
 
 lsp_installer.setup {
 	ensure_installed = servers

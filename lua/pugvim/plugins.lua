@@ -105,7 +105,7 @@ return packer.startup(function(use)
     use "numToStr/Comment.nvim" -- Easily comment stuff
     use 'JoosepAlviste/nvim-ts-context-commentstring'
     use "kyazdani42/nvim-web-devicons" -- icons for file tree
-    use "kyazdani42/nvim-tree.lua" -- file tree
+    --[[ use "kyazdani42/nvim-tree.lua" -- file tree ]]
     -- use "akinsho/bufferline.nvim" -- snazzy bufferline
     use "moll/vim-bbye" -- easily close buffers
     use "nvim-lualine/lualine.nvim" -- statusline in lua
@@ -133,17 +133,22 @@ return packer.startup(function(use)
     use 'nacro90/numb.nvim' -- peeking lines with :NNN
     use 'sunjon/shade.nvim' -- darken unfocused windows
 
+    use {
+        "iamcco/markdown-preview.nvim",
+        run = function() vim.fn["mkdp#util#install"]() end,
+    }
 
     -- writing
     use {
         "mattly/vim-markdown-enhancements",
         "preservim/vim-markdown",
-        "davidgranstrom/nvim-markdown-preview",
+        --[[ "davidgranstrom/nvim-markdown-preview", ]]
         "preservim/vim-pencil",
         "preservim/vim-litecorrect", -- teh to the
         "preservim/vim-textobj-sentence", -- extends vim sentence object for use in prose
         "kana/vim-textobj-user", -- extends vim sentence object for use in prose
         "vigoux/ltex-ls.nvim", -- configuration for ltex-ls
+        "xuhdev/vim-latex-live-preview",
         requires = {
             "kana/vim-textobj-user",
         },
@@ -151,6 +156,8 @@ return packer.startup(function(use)
         -- "junegunn/goyo.vim", -- Distraction-free writing in vim
         "Pocco81/true-zen.nvim", -- Replaces goyo
         "folke/twilight.nvim", -- replaces limelight
+
+        use {"shortcuts/no-neck-pain.nvim", tag = "*" },
 
         ft = {'md', 'tex'}
     }

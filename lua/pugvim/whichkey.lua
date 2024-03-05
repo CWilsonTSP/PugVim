@@ -83,7 +83,7 @@ local mappings = {
     "<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
     "Buffers",
   },
-  ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
+  --[[ ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" }, ]]
   -- ["q"] = { "<cmd>Bdelete<CR>", "Close Buffer" },
   -- ["c"] = { "<cmd>Bdelete!<CR>", "Force Close Buffer" },
   -- ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
@@ -130,6 +130,7 @@ local mappings = {
     w = {
         name = "Writing",
         z = {"<cmd>TZAtaraxis<cr>", "Zen Mode"},
+        c = {"<cmd>NoNeckPain<cr>", "Center Window"},
         p = {"<cmd>PencilToggle<cr>", "Toggle Pencil"},
         s = {
             "<cmd>lua require('telescope.builtin').spell_suggest(require('telescope.themes'))<cr>",
